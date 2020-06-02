@@ -1,0 +1,50 @@
+<mvc:View height="100%" class="sapUiSizeCompact" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:fb="sap.ui.comp.filterbar" xmlns:m="sap.m" xmlns:vm="sap.ui.comp.variants">
+	<f:DynamicPage id="dynamicPageId">
+		<!-- DynamicPage Header -->
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<fb:FilterBar clear="onClear" search="onSearch" showClearButton="true" showClearOnFB="true">
+					<fb:filterGroupItems>
+						<fb:FilterGroupItem visibleInFilterBar="true" groupName="Stock" groupTitle="PartnerInfo" name="UniqueID0" label="Publishing Date">
+							<fb:control>
+								<Input value=""/>
+							</fb:control>
+						</fb:FilterGroupItem>
+						<fb:FilterGroupItem visibleInFilterBar="true" groupName="Publishing Date" groupTitle="PartnerInfo" name="UniqueID1" label="Stock">
+							<fb:control>
+								<Input value=""/>
+							</fb:control>
+						</fb:FilterGroupItem>
+						<fb:FilterGroupItem visibleInFilterBar="true" groupName="Action" groupTitle="PartnerInfo" name="UniqueID2" label="Action">
+							<fb:control>
+								<Input value=""/>
+							</fb:control>
+						</fb:FilterGroupItem>
+					</fb:filterGroupItems>
+				</fb:FilterBar>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<Table>
+				<columns>
+					<Column>
+						<m:Label text="Publishing Date"/>
+					</Column>
+					<Column>
+						<m:Label text="Stock"/>
+					</Column>
+					<Column>
+						<m:Label text="Action"/>
+					</Column>
+					<Column>
+						<m:Label text="Action Price"/>
+					</Column>
+					<Column>
+						<m:Label text="Current Price"/>
+					</Column>
+				</columns>
+			</Table>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>
